@@ -348,3 +348,9 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Personal
+MappaVacciniIT/MappaVacciniIT/MappaVacciniIT/bin
+MappaVacciniIT/MappaVacciniIT/MappaVacciniIT/obj
+MappaVacciniIT/MappaVacciniIT/MappaVacciniIT.Android/bin
+MappaVacciniIT/MappaVacciniIT/MMappaVacciniIT.Android/obj
