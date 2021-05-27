@@ -6,15 +6,13 @@
              xmlns:gmaps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              mc:Ignorable="d"
              x:Class="MappaVacciniIT.MainPage">
-
+    
     <StackLayout>
-        <gmaps:Map x:Name="MyMap"
-        MapType="Street">
+        <gmaps:Map x:Name="MyMap" MapType="Street" >
             <gmaps:Map.Pins Icon="{Binding PinIcon}" Position="{Binding Position}"
                               Label="{Binding PinLabel}" />
         </gmaps:Map>
-        <Button Text="" x:Name="Prova" FontSize="50"/>
-        <Button x:Name="MapType" Text="Switch" Clicked="MapType_Clicked"/>
+        <Switch Margin="0,-40,0,0" IsToggled="False" OnColor="ForestGreen" BackgroundColor="Transparent" ThumbColor="White" x:Name="MapType" Toggled="MapType_Toggled" />
     </StackLayout>
 
 </ContentPage>

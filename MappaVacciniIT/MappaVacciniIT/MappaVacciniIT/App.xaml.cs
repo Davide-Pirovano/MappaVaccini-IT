@@ -10,7 +10,7 @@ namespace MappaVacciniIT
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new TabbedPage1();
         }
 
         protected override void OnStart()

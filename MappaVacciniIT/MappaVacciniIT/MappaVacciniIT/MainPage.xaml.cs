@@ -39,19 +39,20 @@ namespace MappaVacciniIT
                 {"Calabria",0 },
                 {"Trentino",0 },
             };
-        public string[] posizione = new string[3];
         public MainPage()
         {
             InitializeComponent();
             MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(41.870000, 12.600000), Distance.FromKilometers(500)));
             MyMap.UiSettings.RotateGesturesEnabled = false;
+            MyMap.UiSettings.ScrollGesturesEnabled = false;
+            MyMap.UiSettings.ZoomControlsEnabled = false;
+            MyMap.UiSettings.TiltGesturesEnabled = false;
             try
             {
                 Get();
             }
             catch { }
 
-            GetCurrentLocation();
         }
 
         async void Get()
@@ -156,7 +157,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString()+" vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(45.466944, 9.19)
+                        Position = new Position(45.466944, 9.19),
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -392,9 +393,10 @@ namespace MappaVacciniIT
     }
 
         public string mapType = "Street";
-        private void MapType_Clicked(object sender, EventArgs e)
+
+        private void MapType_Toggled(object sender, ToggledEventArgs e)
         {
-            if (mapType=="Street")
+            if (mapType == "Street")
             {
                 MyMap.MapType = Xamarin.Forms.GoogleMaps.MapType.Satellite;
                 mapType = "Satellite";
@@ -404,35 +406,6 @@ namespace MappaVacciniIT
                 MyMap.MapType = Xamarin.Forms.GoogleMaps.MapType.Street;
                 mapType = "Street";
             }
-        }
-
-
-        CancellationTokenSource cts;
-
-        async void GetCurrentLocation()
-        {
-            try
-            {
-                var request = new GeolocationRequest(GeolocationAccuracy.Medium, TimeSpan.FromSeconds(10));
-                cts = new CancellationTokenSource();
-                var location = await Geolocation.GetLocationAsync(request, cts.Token);
-                if (location != null)
-                {
-                    posizione[0] = location.Latitude.ToString();
-                    posizione[1] = location.Longitude.ToString();
-                    posizione[2] = location.Altitude.ToString();
-                }
-            }
-            catch{}
-
-            Prova.Text = posizione[0];
-        }
-
-        protected override void OnDisappearing()
-        {
-            if (cts != null && !cts.IsCancellationRequested)
-                cts.Cancel();
-            base.OnDisappearing();
         }
     }
 }
