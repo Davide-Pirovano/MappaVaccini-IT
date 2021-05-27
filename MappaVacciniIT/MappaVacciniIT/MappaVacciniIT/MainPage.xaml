@@ -1,12 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:gmaps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             mc:Ignorable="d"
              x:Class="MappaVacciniIT.MainPage">
 
-    <maps:Map x:Name="Mappa"
-        MapType="Hybrid"
-        IsShowingUser="True"
-    />
+    <StackLayout>
+        <gmaps:Map x:Name="MyMap"
+        MapType="Street">
+            <gmaps:Map.Pins Icon="{Binding PinIcon}" Position="{Binding Position}"
+                              Label="{Binding PinLabel}" />
+        </gmaps:Map>
+
+        <Button x:Name="MapType" Text="Switch" Clicked="MapType_Clicked"/>
+    </StackLayout>
 
 </ContentPage>
