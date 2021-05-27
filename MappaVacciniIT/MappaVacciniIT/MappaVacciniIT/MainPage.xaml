@@ -13,7 +13,7 @@
             <gmaps:Map.Pins Icon="{Binding PinIcon}" Position="{Binding Position}"
                               Label="{Binding PinLabel}" />
         </gmaps:Map>
-
+        <Button Text="" x:Name="Prova" FontSize="50"/>
         <Button x:Name="MapType" Text="Switch" Clicked="MapType_Clicked"/>
     </StackLayout>
 

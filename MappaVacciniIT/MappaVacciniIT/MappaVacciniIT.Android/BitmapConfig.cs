@@ -27,25 +27,7 @@ namespace MappaVacciniIT.Droid
             switch (descriptor.Id)
             {
                 case "ping":
-                    iconId = Resource.Drawable.pin;
-                    break;
-                case "milan":
-                    iconId = Resource.Drawable.duomodimilano;
-                    break;
-                case "liguria":
-                    iconId = Resource.Drawable.liguria;
-                    break;
-                case "emilia":
-                    iconId = Resource.Drawable.lasagna;
-                    break;
-                case "venezia":
-                    iconId = Resource.Drawable.venezia;
-                    break;
-                case "trentino":
-                    iconId = Resource.Drawable.trentino;
-                    break;
-                case "lazio":
-                    iconId = Resource.Drawable.colosseum;
+                    iconId = Resource.Drawable.pin3;
                     break;
             }
 

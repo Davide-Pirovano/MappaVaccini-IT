@@ -9,7 +9,7 @@ using MappaVacciniIT.Droid;
 
 namespace MappaVacciniIT.Droid
 {
-    [Activity(Label = "MappaVacciniIT", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
+    [Activity(Label = "MappaVacciniIT", Icon = "@mipmap/vaccine", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -46,6 +46,10 @@ namespace MappaVacciniIT.Droid
             {
                 base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             }
+
+            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
         protected override void OnStart()
         {
@@ -69,7 +73,9 @@ namespace MappaVacciniIT.Droid
         readonly string[] LocationPermissions =
         {
             Manifest.Permission.AccessCoarseLocation,
-            Manifest.Permission.AccessFineLocation
+            Manifest.Permission.AccessFineLocation,
+            Manifest.Permission.AccessBackgroundLocation
+
         };
     }
 }

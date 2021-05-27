@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
+using Xamarin.Essentials;
+using System.Threading;
 
 namespace MappaVacciniIT
 {
@@ -37,6 +39,7 @@ namespace MappaVacciniIT
                 {"Calabria",0 },
                 {"Trentino",0 },
             };
+        public string[] posizione = new string[3];
         public MainPage()
         {
             InitializeComponent();
@@ -47,6 +50,8 @@ namespace MappaVacciniIT
                 Get();
             }
             catch { }
+
+            GetCurrentLocation();
         }
 
         async void Get()
@@ -150,8 +155,8 @@ namespace MappaVacciniIT
                         Label = item.Key,
                         Address = (item.Value).ToString()+" vaccini somministrati",
                         Type = PinType.Place,
-                        Icon = BitmapDescriptorFactory.FromBundle("milan"),
-                        Position = new Position(45.585556, 9.930278)
+                        Icon = BitmapDescriptorFactory.FromBundle("ping"),
+                        Position = new Position(45.466944, 9.19)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -163,7 +168,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(43.510926, 11.185614)
+                        Position = new Position(43.771389, 11.254167)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -175,7 +180,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(45.171620, 7.920124)
+                        Position = new Position(45.066667, 7.7)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -187,7 +192,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(41.013412, 14.764958)
+                        Position = new Position(40.833333, 14.25)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -199,7 +204,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(41.633469, 14.577356)
+                        Position = new Position(41.561, 14.6684)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -211,7 +216,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(43.371091, 13.163432)
+                        Position = new Position(43.616667, 13.516667)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -223,7 +228,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(44.313050, 8.321408)
+                        Position = new Position(44.407186, 8.933983)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -235,7 +240,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(45.709543, 11.919564)
+                        Position = new Position(45.439722, 12.331944)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -247,7 +252,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(42.012711, 12.903216)
+                        Position = new Position(41.893056, 12.482778)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -259,7 +264,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(44.528191, 11.333755)
+                        Position = new Position(44.493889, 11.342778)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -271,7 +276,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(46.204311, 12.968751)
+                        Position = new Position(45.650278, 13.770278)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -283,7 +288,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(40.114762, 9.013230)
+                        Position = new Position(39.216667, 9.116667)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -295,7 +300,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(37.585361, 14.179883)
+                        Position = new Position(38.115658, 13.361262)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -307,7 +312,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(41.031655, 16.584052)
+                        Position = new Position(41.125278, 16.866667)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -319,7 +324,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(42.883959, 12.513396)
+                        Position = new Position(43.1121, 12.3888)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -331,7 +336,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(39.101225, 16.483641)
+                        Position = new Position(38.91, 16.5875)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -343,7 +348,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Generic,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(40.518110, 16.120566)
+                        Position = new Position(40.633333, 15.8)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -355,7 +360,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.SavedPin,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(45.707832, 7.393762),
+                        Position = new Position(45.737222, 7.320556),
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -367,7 +372,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(46.061826, 11.136906)
+                        Position = new Position(46.066667, 11.116667)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -379,7 +384,7 @@ namespace MappaVacciniIT
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Icon = BitmapDescriptorFactory.FromBundle("ping"),
-                        Position = new Position(42.216067, 13.880059)
+                        Position = new Position(42.354008, 13.391992)
                     };
                     MyMap.Pins.Add(pin);
                 }
@@ -399,6 +404,35 @@ namespace MappaVacciniIT
                 MyMap.MapType = Xamarin.Forms.GoogleMaps.MapType.Street;
                 mapType = "Street";
             }
+        }
+
+
+        CancellationTokenSource cts;
+
+        async void GetCurrentLocation()
+        {
+            try
+            {
+                var request = new GeolocationRequest(GeolocationAccuracy.Medium, TimeSpan.FromSeconds(10));
+                cts = new CancellationTokenSource();
+                var location = await Geolocation.GetLocationAsync(request, cts.Token);
+                if (location != null)
+                {
+                    posizione[0] = location.Latitude.ToString();
+                    posizione[1] = location.Longitude.ToString();
+                    posizione[2] = location.Altitude.ToString();
+                }
+            }
+            catch{}
+
+            Prova.Text = posizione[0];
+        }
+
+        protected override void OnDisappearing()
+        {
+            if (cts != null && !cts.IsCancellationRequested)
+                cts.Cancel();
+            base.OnDisappearing();
         }
     }
 }
