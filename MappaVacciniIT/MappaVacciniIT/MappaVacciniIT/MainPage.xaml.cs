@@ -45,7 +45,7 @@ namespace MappaVacciniIT
         public MainPage()
         {
             InitializeComponent();
-            MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(41.870000, 12.600000), Distance.FromKilometers(500)));
+            MyMap.IsVisible = false;
             try
             {
                 Get();
@@ -981,6 +981,12 @@ namespace MappaVacciniIT
             MyMap.MapElements.Add(aosta);
             MyMap.MapElements.Add(veneto);
 
+            Caricamento.IsVisible = false;
+            MapType.IsVisible = true;
+            Button.IsVisible = true;
+            MyMap.IsVisible = true;
+            MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(41.870000, 12.600000), Distance.FromKilometers(500)));
+
         }
 
         public string mapType = "Street";
@@ -997,6 +1003,11 @@ namespace MappaVacciniIT
                 MyMap.MapType = Xamarin.Forms.Maps.MapType.Street;
                 mapType = "Street";
             }
+        }
+
+        private void BackToItaly_Clicked(object sender, EventArgs e)
+        {
+            MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(41.870000, 12.600000), Distance.FromKilometers(500)));
         }
     }
 }
