@@ -151,239 +151,239 @@ namespace MappaVacciniIT
             {
                 if (item.Key == "Lombardia")
                 {
-                    Pin pin = new Pin
+                    Pin pinLombardia = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString()+" vaccini somministrati",
                         Type = PinType.Place,
                         Position = new Position(45.466944, 9.19),
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinLombardia);
                 }
                 else if(item.Key == "Toscana")
                 {
-                    Pin pin = new Pin
+                    Pin pinToscana = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
-                        Position = new Position(43.771389, 11.254167)
+                        Position = new Position(43.333333, 11.333333)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinToscana);
                 }
                 else if (item.Key == "Piemonte")
                 {
-                    Pin pin = new Pin
+                    Pin pinPiemonte = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Position = new Position(45.066667, 7.7)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinPiemonte);
                 }
                 else if (item.Key == "Campania")
                 {
-                    Pin pin = new Pin
+                    Pin pinCampania = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Position = new Position(40.833333, 14.25)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinCampania);
                 }
                 else if (item.Key == "Molise")
                 {
-                    Pin pin = new Pin
+                    Pin pinMolise = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
-                        Position = new Position(41.561, 14.6684)
+                        Position = new Position(42.002778, 14.994722)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinMolise);
                 }
                 else if (item.Key == "Marche")
                 {
-                    Pin pin = new Pin
+                    Pin pinMarche = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Position = new Position(43.616667, 13.516667)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinMarche);
                 }
                 else if (item.Key == "Liguria")
                 {
-                    Pin pin = new Pin
+                    Pin pinLiguria = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Position = new Position(44.407186, 8.933983)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinLiguria);
                 }
                 else if (item.Key == "Veneto")
                 {
-                    Pin pin = new Pin
+                    Pin pinVeneto = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Position = new Position(45.439722, 12.331944)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinVeneto);
                 }
                 else if (item.Key == "Lazio")
                 {
-                    Pin pin = new Pin
+                    Pin pinLazio = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Position = new Position(41.893056, 12.482778)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinLazio);
                 }
                 else if (item.Key == "Emilia-Romagna")
                 {
-                    Pin pin = new Pin
+                    Pin pinEmilia = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Position = new Position(44.493889, 11.342778)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinEmilia);
                 }
                 else if (item.Key == "Friuli-Venezia Giulia")
                 {
-                    Pin pin = new Pin
+                    Pin pinFriuli = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Position = new Position(45.650278, 13.770278)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinFriuli);
                 }
                 else if (item.Key == "Sardegna")
                 {
-                    Pin pin = new Pin
+                    Pin pinSardegna = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
-                        Position = new Position(39.216667, 9.116667)
+                        Position = new Position(40.115112, 9.012081)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinSardegna);
                 }
                 else if (item.Key == "Sicilia")
                 {
-                    Pin pin = new Pin
+                    Pin pinSicilia = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
-                        Position = new Position(38.115658, 13.361262)
+                        Position = new Position(37.491472, 14.062444)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinSicilia);
                 }
                 else if (item.Key == "Puglia")
                 {
-                    Pin pin = new Pin
+                    Pin pinPuglia = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
-                        Position = new Position(41.125278, 16.866667)
+                        Position = new Position(40.7, 17.333333)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinPuglia);
                 }
                 else if (item.Key == "Umbria")
                 {
-                    Pin pin = new Pin
+                    Pin pinUmbria = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Position = new Position(43.1121, 12.3888)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinUmbria);
                 }
                 else if (item.Key == "Calabria")
                 {
-                    Pin pin = new Pin
+                    Pin pinCalabria = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Position = new Position(38.91, 16.5875)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinCalabria);
                 }
                 else if (item.Key == "Basilicata")
                 {
-                    Pin pin = new Pin
+                    Pin pinBasilicata = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Generic,
                         Position = new Position(40.633333, 15.8)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinBasilicata);
                 }
                 else if (item.Key == "Valle d'Aosta")
                 {
-                    Pin pin = new Pin
+                    Pin pinAosta = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.SavedPin,
-                        Position = new Position(45.737222, 7.320556),
+                        Position = new Position(45.783333, 6.966667),
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinAosta);
                 }
                 else if (item.Key == "Trentino")
                 {
-                    Pin pin = new Pin
+                    Pin pinTrentino = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Position = new Position(46.066667, 11.116667)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinTrentino);
                 }
                 else if (item.Key == "Abruzzo")
                 {
-                    Pin pin = new Pin
+                    Pin pinAbruzzo = new Pin
                     {
                         Label = item.Key,
                         Address = (item.Value).ToString() + " vaccini somministrati",
                         Type = PinType.Place,
                         Position = new Position(42.354008, 13.391992)
                     };
-                    MyMap.Pins.Add(pin);
+                    MyMap.Pins.Add(pinAbruzzo);
                 }
             }
 
             //creazione regioni
 
             Rootobject coordinate = new Rootobject();
-            string gina = "";
+            string val = "";
             var assembly = IntrospectionExtensions.GetTypeInfo(typeof(LoadResourceText)).Assembly;
             Stream stream = assembly.GetManifestResourceStream("MappaVacciniIT.regioniFattebene.txt");
-            using (StreamReader sr = new StreamReader(stream))//non funziona
+            using (StreamReader sr = new StreamReader(stream))
             {
 
-                gina = sr.ReadToEnd();
+                val = sr.ReadToEnd();
 
             }
-            coordinate = JsonConvert.DeserializeObject<Rootobject>(gina);
+            coordinate = JsonConvert.DeserializeObject<Rootobject>(val);
             List<Position> lista = new List<Position>();
             Dictionary<string, List<Position>> dizionario = new Dictionary<string, List<Position>>();
 
@@ -411,7 +411,6 @@ namespace MappaVacciniIT
 
 
                 }
-
 
                 dizionario.Add(item.properties.reg_name, lista);
 
@@ -982,14 +981,14 @@ namespace MappaVacciniIT
             MyMap.MapElements.Add(veneto);
 
             Caricamento.IsVisible = false;
+            MyMap.IsVisible = true;
             MapType.IsVisible = true;
             Button.IsVisible = true;
-            MyMap.IsVisible = true;
             MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(41.870000, 12.600000), Distance.FromKilometers(500)));
 
         }
 
-        public string mapType = "Street";
+        public string mapType = "Satellite";
 
         private void MapType_Toggled(object sender, ToggledEventArgs e)
         {

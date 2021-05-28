@@ -8,6 +8,8 @@ namespace MappaVacciniIT
     {
         public App()
         {
+
+            NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
 
             MainPage = new TabbedPage1();
