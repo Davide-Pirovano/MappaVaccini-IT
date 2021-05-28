@@ -21,13 +21,20 @@ namespace MappaVacciniIT
         public Vicinanza()
         {
             InitializeComponent();
-            GetCurrentLocation();
+            Metodo();
         }
+
+        async void Metodo()
+        {
+            await GetCurrentLocation();
+            t.Text = $"Latitudine {posizione[0]} Longitudine {posizione[1]} Altitudine {posizione[2]}";
+        }
+
 
 
         CancellationTokenSource cts;
 
-        async void GetCurrentLocation()
+        async Task GetCurrentLocation()
         {
             try
             {

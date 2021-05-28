@@ -19,12 +19,6 @@ namespace MappaVacciniIT.Droid
 
             base.OnCreate(savedInstanceState);
 
-            var platformConfig = new PlatformConfig
-            {
-                BitmapDescriptorFactory = new BitmapConfig()
-            };
-
-            Xamarin.FormsGoogleMaps.Init(this, savedInstanceState, platformConfig);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

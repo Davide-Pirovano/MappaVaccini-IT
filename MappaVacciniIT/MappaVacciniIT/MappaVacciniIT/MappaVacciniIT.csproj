@@ -12,6 +12,11 @@
 
   <ItemGroup>
     <None Remove="MainPage.xaml.cs~RF3375b4.TMP" />
+    <None Remove="regioniFattebene.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="regioniFattebene.txt" />
   </ItemGroup>
 
   <ItemGroup>

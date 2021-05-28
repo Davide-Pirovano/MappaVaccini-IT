@@ -3,16 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:gmaps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             xmlns:gmaps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              mc:Ignorable="d"
              x:Class="MappaVacciniIT.MainPage">
     
-    <StackLayout>
-        <gmaps:Map x:Name="MyMap" MapType="Street" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+        <gmaps:Map x:Name="MyMap" MapType="Street" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="2">
             <gmaps:Map.Pins Icon="{Binding PinIcon}" Position="{Binding Position}"
                               Label="{Binding PinLabel}" />
         </gmaps:Map>
-        <Switch Margin="0,-40,0,0" IsToggled="False" OnColor="ForestGreen" BackgroundColor="Transparent" ThumbColor="White" x:Name="MapType" Toggled="MapType_Toggled" />
-    </StackLayout>
+        <Switch Grid.Row="0" HorizontalOptions="Center" IsToggled="False" OnColor="MediumPurple" Margin="0,10,20,10" BackgroundColor="Transparent" ThumbColor="Red" x:Name="MapType" Toggled="MapType_Toggled" />
+    </Grid>
 
 </ContentPage>
