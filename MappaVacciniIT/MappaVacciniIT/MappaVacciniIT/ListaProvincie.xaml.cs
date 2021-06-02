@@ -45,7 +45,16 @@ namespace MappaVacciniIT
                         Provincia = item.provincia
                     });
                 }
-                else if (regione== "Trentino" && (item.nome_area== @"Provincia Autonoma Bolzano \/ Bozen" || item.nome_area == @"Provincia Autonoma Trento"))
+                else if (regione== "Trentino" && item.nome_area == @"Provincia Autonoma Trento")
+                {
+                    Provincies.Add(new Provincie
+                    {
+                        Comune = item.comune,
+                        Ospedale = item.presidio_ospedaliero,
+                        Provincia = item.provincia
+                    });
+                }
+                else if (regione == "Trentino" && item.nome_area == @"Provincia Autonoma Bolzano / Bozen")
                 {
                     Provincies.Add(new Provincie
                     {
