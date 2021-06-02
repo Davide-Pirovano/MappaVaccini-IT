@@ -159,6 +159,10 @@ namespace MappaVacciniIT
                         Position = new Position(45.466944, 9.19),
                     };
                     MyMap.Pins.Add(pinLombardia);
+                    pinLombardia.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Lombardia"));
+                    };
                 }
                 else if(item.Key == "Toscana")
                 {
@@ -170,6 +174,11 @@ namespace MappaVacciniIT
                         Position = new Position(43.333333, 11.333333)
                     };
                     MyMap.Pins.Add(pinToscana);
+
+                    pinToscana.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Toscana"));
+                    };
                 }
                 else if (item.Key == "Piemonte")
                 {
@@ -181,6 +190,11 @@ namespace MappaVacciniIT
                         Position = new Position(45.066667, 7.7)
                     };
                     MyMap.Pins.Add(pinPiemonte);
+
+                    pinPiemonte.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Piemonte"));
+                    };
                 }
                 else if (item.Key == "Campania")
                 {
@@ -192,6 +206,11 @@ namespace MappaVacciniIT
                         Position = new Position(40.833333, 14.25)
                     };
                     MyMap.Pins.Add(pinCampania);
+
+                    pinCampania.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Campania"));
+                    };
                 }
                 else if (item.Key == "Molise")
                 {
@@ -203,6 +222,12 @@ namespace MappaVacciniIT
                         Position = new Position(42.002778, 14.994722)
                     };
                     MyMap.Pins.Add(pinMolise);
+
+
+                    pinMolise.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Molise"));
+                    };
                 }
                 else if (item.Key == "Marche")
                 {
@@ -214,6 +239,12 @@ namespace MappaVacciniIT
                         Position = new Position(43.616667, 13.516667)
                     };
                     MyMap.Pins.Add(pinMarche);
+
+
+                    pinMarche.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Marche"));
+                    };
                 }
                 else if (item.Key == "Liguria")
                 {
@@ -225,6 +256,12 @@ namespace MappaVacciniIT
                         Position = new Position(44.407186, 8.933983)
                     };
                     MyMap.Pins.Add(pinLiguria);
+
+
+                    pinLiguria.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Liguria"));
+                    };
                 }
                 else if (item.Key == "Veneto")
                 {
@@ -236,6 +273,11 @@ namespace MappaVacciniIT
                         Position = new Position(45.439722, 12.331944)
                     };
                     MyMap.Pins.Add(pinVeneto);
+
+                    pinVeneto.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Veneto"));
+                    };
                 }
                 else if (item.Key == "Lazio")
                 {
@@ -247,6 +289,11 @@ namespace MappaVacciniIT
                         Position = new Position(41.893056, 12.482778)
                     };
                     MyMap.Pins.Add(pinLazio);
+
+                    pinLazio.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Lazio"));
+                    };
                 }
                 else if (item.Key == "Emilia-Romagna")
                 {
@@ -258,6 +305,11 @@ namespace MappaVacciniIT
                         Position = new Position(44.493889, 11.342778)
                     };
                     MyMap.Pins.Add(pinEmilia);
+
+                    pinEmilia.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Emilia"));
+                    };
                 }
                 else if (item.Key == "Friuli-Venezia Giulia")
                 {
@@ -269,6 +321,10 @@ namespace MappaVacciniIT
                         Position = new Position(45.650278, 13.770278)
                     };
                     MyMap.Pins.Add(pinFriuli);
+                    pinFriuli.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Friuli"));
+                    };
                 }
                 else if (item.Key == "Sardegna")
                 {
@@ -280,6 +336,10 @@ namespace MappaVacciniIT
                         Position = new Position(40.115112, 9.012081)
                     };
                     MyMap.Pins.Add(pinSardegna);
+                    pinSardegna.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Sardegna"));
+                    };
                 }
                 else if (item.Key == "Sicilia")
                 {
@@ -291,6 +351,10 @@ namespace MappaVacciniIT
                         Position = new Position(37.491472, 14.062444)
                     };
                     MyMap.Pins.Add(pinSicilia);
+                    pinSicilia.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Sicilia"));
+                    };
                 }
                 else if (item.Key == "Puglia")
                 {
@@ -302,6 +366,10 @@ namespace MappaVacciniIT
                         Position = new Position(40.7, 17.333333)
                     };
                     MyMap.Pins.Add(pinPuglia);
+                    pinPuglia.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Puglia"));
+                    };
                 }
                 else if (item.Key == "Umbria")
                 {
@@ -313,6 +381,10 @@ namespace MappaVacciniIT
                         Position = new Position(43.1121, 12.3888)
                     };
                     MyMap.Pins.Add(pinUmbria);
+                    pinUmbria.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Umbria"));
+                    };
                 }
                 else if (item.Key == "Calabria")
                 {
@@ -324,6 +396,10 @@ namespace MappaVacciniIT
                         Position = new Position(38.91, 16.5875)
                     };
                     MyMap.Pins.Add(pinCalabria);
+                    pinCalabria.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Calabria"));
+                    };
                 }
                 else if (item.Key == "Basilicata")
                 {
@@ -335,6 +411,11 @@ namespace MappaVacciniIT
                         Position = new Position(40.633333, 15.8)
                     };
                     MyMap.Pins.Add(pinBasilicata);
+
+                    pinBasilicata.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Basilicata"));
+                    };
                 }
                 else if (item.Key == "Valle d'Aosta")
                 {
@@ -346,6 +427,12 @@ namespace MappaVacciniIT
                         Position = new Position(45.783333, 6.966667),
                     };
                     MyMap.Pins.Add(pinAosta);
+
+
+                    pinAosta.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Aosta"));
+                    };
                 }
                 else if (item.Key == "Trentino")
                 {
@@ -357,6 +444,12 @@ namespace MappaVacciniIT
                         Position = new Position(46.066667, 11.116667)
                     };
                     MyMap.Pins.Add(pinTrentino);
+
+
+                    pinTrentino.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Trentino"));
+                    };
                 }
                 else if (item.Key == "Abruzzo")
                 {
@@ -368,6 +461,12 @@ namespace MappaVacciniIT
                         Position = new Position(42.354008, 13.391992)
                     };
                     MyMap.Pins.Add(pinAbruzzo);
+
+
+                    pinAbruzzo.InfoWindowClicked += async (s, args) =>
+                    {
+                        await Navigation.PushAsync(new ListaProvincie("Abruzzo"));
+                    };
                 }
             }
 

@@ -8,11 +8,10 @@ namespace MappaVacciniIT
     {
         public App()
         {
-
             NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
 
-            MainPage = new TabbedPage1();
+            MainPage = new NavigationPage(new TabbedPage1());
         }
 
         protected override void OnStart()
