@@ -133,7 +133,7 @@ namespace MappaVacciniIT
                             Ospedale = item.Ospedale,
                             Provincia = item.Provincia,
                             Distanza = v+" km",
-                            Tempo = v1 +" m"
+                            Tempo = v1 +" min"
                         });
                     }
                 }

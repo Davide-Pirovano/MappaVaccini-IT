@@ -41,7 +41,7 @@
                         <Label Text="{Binding Distanza}" Grid.Row="2" Grid.Column="2"/>
                         <Label Text="Tempo" Grid.Row="3" Grid.Column="1" />
                         <Label Text="{Binding Tempo}" Grid.Row="3" Grid.Column="2"/>
-                        <Label Text="-----------------------------------------------------------------------------" TextColor="MediumPurple" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"/>
+                        <Label Text="------------------------------------------------------------------------------------------------" TextColor="MediumPurple" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4"/>
                     </Grid>
 
                 </DataTemplate>

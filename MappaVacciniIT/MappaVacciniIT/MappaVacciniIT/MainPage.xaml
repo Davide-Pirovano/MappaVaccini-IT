@@ -9,13 +9,13 @@
     
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1.1*"/>
             <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="4*"/>
             <ColumnDefinition Width="10*"/>
         </Grid.ColumnDefinitions>
         <gmaps:Map x:Name="MyMap" MapType="Satellite" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="2">
