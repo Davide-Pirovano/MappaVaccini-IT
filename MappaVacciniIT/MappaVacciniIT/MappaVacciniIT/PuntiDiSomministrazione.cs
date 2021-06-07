@@ -1,4 +1,5 @@
-﻿public class PuntiDiSomministrazione
+﻿
+public class PuntiDiSomministrazione
 {
     public Schema2 schema { get; set; }
     public Datum2[] data { get; set; }

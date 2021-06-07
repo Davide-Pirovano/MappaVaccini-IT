@@ -589,11 +589,11 @@ namespace MappaVacciniIT
             {
                 if (item.Key == "Lombardia")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         lombardia.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         lombardia.FillColor = Color.FromHex("5E548E");
                     }
@@ -604,11 +604,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Veneto")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         veneto.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         veneto.FillColor = Color.FromHex("5E548E");
                     }
@@ -619,11 +619,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Lazio")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         lazio.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         lazio.FillColor = Color.FromHex("5E548E");
                     }
@@ -634,11 +634,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Marche")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         marche.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         marche.FillColor = Color.FromHex("5E548E");
                     }
@@ -649,11 +649,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Abruzzo")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         abruzzo.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         abruzzo.FillColor = Color.FromHex("5E548E");
                     }
@@ -664,11 +664,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Toscana")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         toscana.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         toscana.FillColor = Color.FromHex("5E548E");
                     }
@@ -679,11 +679,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Emilia-Romagna")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         emilia.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         emilia.FillColor = Color.FromHex("5E548E");
                     }
@@ -694,11 +694,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Piemonte")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         piemonte.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         piemonte.FillColor = Color.FromHex("5E548E");
                     }
@@ -709,11 +709,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Friuli-Venezia Giulia")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         friuli.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         friuli.FillColor = Color.FromHex("5E548E");
                     }
@@ -724,11 +724,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Campania")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         campania.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         campania.FillColor = Color.FromHex("5E548E");
                     }
@@ -739,11 +739,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Basilicata")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         basilicata.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         basilicata.FillColor = Color.FromHex("5E548E");
                     }
@@ -754,11 +754,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Molise")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         molise.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         molise.FillColor = Color.FromHex("5E548E");
                     }
@@ -769,11 +769,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Umbria")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         umbria.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         umbria.FillColor = Color.FromHex("5E548E");
                     }
@@ -784,11 +784,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Sicilia")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         sicilia.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         sicilia.FillColor = Color.FromHex("5E548E");
                     }
@@ -799,11 +799,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Sardegna")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         sardegna.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         sardegna.FillColor = Color.FromHex("5E548E");
                     }
@@ -814,11 +814,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Puglia")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         puglia.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         puglia.FillColor = Color.FromHex("5E548E");
                     }
@@ -829,11 +829,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Valle d'Aosta")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         aosta.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         aosta.FillColor = Color.FromHex("5E548E");
                     }
@@ -844,11 +844,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Liguria")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         liguria.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         liguria.FillColor = Color.FromHex("5E548E");
                     }
@@ -859,11 +859,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Calabria")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         calabria.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         calabria.FillColor = Color.FromHex("5E548E");
                     }
@@ -874,11 +874,11 @@ namespace MappaVacciniIT
                 }
                 if (item.Key == "Trentino")
                 {
-                    if (item.Value > 1000000)
+                    if (item.Value > 3000000)
                     {
                         trentino.FillColor = Color.FromHex("9F86C0");
                     }
-                    else if (item.Value > 500000)
+                    else if (item.Value > 1000000)
                     {
                         trentino.FillColor = Color.FromHex("5E548E");
                     }
