@@ -4,6 +4,50 @@
              x:Class="MappaVacciniIT.Vicinanza">
 
 
-    <Label x:Name="t" Text="" />
 
+
+    <Grid Margin="20,20,20,20">
+        
+        <Label x:Name="Title" Margin="0,0,0,20" TextColor="MediumPurple" IsVisible="false" Text="Centri vaccinali nella tua zona" HorizontalOptions="Center" FontSize="20"/>
+        <StackLayout Margin="0,270,0,0">
+            <Label x:Name="Counter" TextColor="MediumPurple" HorizontalOptions="Center" FontSize="20"/>
+            <ActivityIndicator x:Name="Caricamento" IsVisible="true" IsRunning="true" Margin="0,-50,0,0" Color="MediumPurple" HeightRequest="70"/>
+        </StackLayout>
+
+        <CollectionView ItemsSource="{Binding Final}" Margin="0,50,0,0" SelectionMode="None">
+            <CollectionView.ItemTemplate  >
+                <DataTemplate >
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.1*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="0.1*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.1*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="0.1*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Ospedale" Grid.Row="1" Grid.Column="1" />
+                        <Label Text="{Binding Ospedale}" Grid.Row="1" Grid.Column="2"/>
+                        <Label Text="Distanza" Grid.Row="2" Grid.Column="1" />
+                        <Label Text="{Binding Distanza}" Grid.Row="2" Grid.Column="2"/>
+                        <Label Text="Tempo" Grid.Row="3" Grid.Column="1" />
+                        <Label Text="{Binding Tempo}" Grid.Row="3" Grid.Column="2"/>
+                        <Label Text="-----------------------------------------------------------------------------" TextColor="MediumPurple" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    </Grid>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+
+    </Grid>
 </ContentPage>

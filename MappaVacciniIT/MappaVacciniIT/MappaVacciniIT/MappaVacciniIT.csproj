@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <None Remove="MainPage.xaml.cs~RF3375b4.TMP" />
+    <None Remove="OspedaliVicini.cs~RF6c41da66.TMP" />
     <None Remove="regioniFattebene.txt" />
   </ItemGroup>
 

@@ -6,6 +6,7 @@
     <StackLayout Margin="20,20,20,20">
 
         <Button BorderColor="White" BorderWidth="2" Text="" x:Name="Titolo" HorizontalOptions="Center" FontSize="20"/>
+        <Label x:Name="Vaccini" Margin="20" TextColor="MediumPurple" HorizontalOptions="Center" FontSize="20"/>
 
         <CollectionView ItemsSource="{Binding Provincies}"
                 SelectionMode="None" Margin="0,20,0,0">

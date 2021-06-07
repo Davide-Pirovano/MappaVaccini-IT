@@ -21,18 +21,24 @@ namespace MappaVacciniIT
         string regione = "";
         static string url = "https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/master/dati/punti-somministrazione-latest.json";
         HttpClient client = new HttpClient();
-        public ListaProvincie(string s)
+        public ListaProvincie(string s,int vaccini)
         {
             InitializeComponent();
             regione = s;
             Titolo.Text = "Centri Vaccinali " + regione;
+            Vaccini.Text = vaccini.ToString() + " vaccini somministrati";
             Get();
         }
         public IList<Provincie> Provincies { get; private set; }
         async void Get()
         {
+            string dati = "";
             Provincies = new List<Provincie>();
-            string dati = await client.GetStringAsync(url);
+            try
+            {
+                dati = await client.GetStringAsync(url);
+            }
+            catch{}
             PuntiDiSomministrazione pS = JsonConvert.DeserializeObject<PuntiDiSomministrazione>(dati);
             foreach (var item in pS.data)
             {
