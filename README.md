@@ -1,2 +1,2 @@
 # MappaVaccini-IT
-Mappatura delle vaccinazioni in Italia
+Mappatura delle vaccinazioni COVID-19 in Italia
